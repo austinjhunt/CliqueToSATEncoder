@@ -1,0 +1,7 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename="js/minisat.js")}}"></script>></script>
+
+Display for each dimacs string the time taken for the sat solver to solve: 
+<div id="dcontainer" style="display:none">{ {% for key,value in ddict.items() %}"{{key}}":"{{value}}",{% endfor %} }</div>
+<p id="solveresults"></p>
+
